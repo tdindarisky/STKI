@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1nOQbsp3s_FSNDYc5KtmNeKKVc-Czr3Zt
 """
 
-pip install Sastrawi
+
 
 import pandas as pd
 import numpy as np
