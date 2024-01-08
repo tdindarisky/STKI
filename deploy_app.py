@@ -51,7 +51,7 @@ if app_mode == "🏠 Home":
 elif app_mode == "📈 Data Analysis":
     st.sidebar.write("Anda berada di Mode Data Analysis.")
     
-    sentiment_twitter=pd.read_csv("/data/Twitter_Data.csv")
+    sentiment_twitter=pd.read_csv("data/Twitter_Data.csv")
 
     st.subheader('Data Sentimen Dari X atau Twitter')
     st.write(sentiment_twitter)
