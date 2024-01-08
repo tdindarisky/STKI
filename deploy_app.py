@@ -56,13 +56,7 @@ elif app_mode == "📈 Data Analysis":
     st.subheader('Data Sentimen Dari X atau Twitter')
     st.write(sentiment_twitter)
 
-    st.subheader('Distribusi Jumlah Kata per Review')
-    words_per_post = sentiment_twitter.clean_text.apply(lambda x: len(str(x).split(" ")))
-    plt.hist(words_per_post, bins=100)
-    plt.xlabel('Panjang Kata')
-    plt.ylabel('Frekuensi')
-    st.write(f'Rata-rata kata : {words_per_post.mean()}')
-    st.write(f'Skewness : {words_per_post.skew()}')
+  
 
     st.subheader('Distribusi Sentimen')
     percent_val = 100 * sentiment_twitter['sentiment'].value_counts() / len(sentiment_twitter)
