@@ -58,7 +58,7 @@ elif app_mode == "📈 Data Analysis":
 
     st.subheader('Distribusi Jumlah Kata per Review')
     words_per_post = sentiment_twitter.clean_text.apply(lambda x: len(str(x).split(" ")))
-    plt.hist(bins = 100)
+    plt.hist(words_per_post, bins = 100)
     plt.xlabel('Panjang Kata')
     plt.ylabel('Frekuensi')
     st.write(f'Rata-rata kata : {words_per_post.mean()}')
