@@ -11,19 +11,18 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
-import joblib
+import pickle
 from plotly import express as px
 import nltk
 from nltk.corpus import stopwords
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from google.colab import drive
-drive.mount('/content/drive')
 
-model_nb = joblib.load("/content/drive/MyDrive/model_naive_bayes.pkl")
 
-data=pd.read_csv("/content/drive/MyDrive/datasettwt/Twitter_Data.csv")
+model_nb = pickle.load(open("/model/model_naive_bayes.pkl", 'rb'))
+
+data=pd.read_csv("/data/Twitter_Data.csv")
 
 data
 
