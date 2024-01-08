@@ -17,7 +17,7 @@ from wordcloud import WordCloud
 
 
 # Memuat model Naive Bayes
-model = pickle.load(open("model/model_knn.pkl", 'rb'))
+model = pickle.load(open("model/model_naive_bayes.sav", 'rb'))
 
 # Fungsi untuk melakukan prediksi sentimen
 def predict_sentiment(sentiment_text):
