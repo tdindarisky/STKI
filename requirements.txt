@@ -1,0 +1,10 @@
+scikit-learn
+streamlit
+pandas
+joblib
+gensim
+plotly
+numpy
+nltk
+wordcloud
+pillow
