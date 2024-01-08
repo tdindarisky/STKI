@@ -4,7 +4,7 @@
 
 import pandas as pd
 import numpy as np
-import pickle
+import joblib
 from plotly import express as px
 import nltk
 import streamlit as st
@@ -17,7 +17,7 @@ from wordcloud import WordCloud
 
 
 # Memuat model Naive Bayes
-model = pickle.load(open("model/model_naive_bayes.pkl", 'rb'))
+model = joblib.load("model/model_naive_bayes.sav")
 
 # Fungsi untuk melakukan prediksi sentimen
 def predict_sentiment(sentiment_text):
